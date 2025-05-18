@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippine Hospital - Healthcare Excellence Since 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>📞 Emergency: +63 2 1234 5678</span>
+                <span>✉️ info@philippinehospital.com</span>
+            </div>
+            <div class="social-links">
+                Follow us on social media
+            </div>
+        </div>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/Users/winsicheng/Desktop/philippine hospital.png" alt="Philippine Hospital Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showHome()">Home</a></li>
+                    <li><a href="#" onclick="showServices()">Services</a></li>
+                    <li><a href="#" onclick="showMedicines()">Medicines</a></li>
+                    <li><a href="#" onclick="showAbout()">About Us</a></li>
+                    <li><a href="#" onclick="showModal('appointment')">Appointments</a></li>
+                    <li><a href="#" onclick="showContact()">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Your Health Is Our Priority</h1>
+                <p>Philippine Hospital is dedicated to providing exceptional healthcare services with compassion, integrity, and excellence since 2024.</p>
+                <a href="#" class="btn" onclick="showModal('consultation')">Free Consultation</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services-section">
+            <h2 class="section-title">Our Healthcare Services</h2>
+            <p>We offer a comprehensive range of medical services to address all your healthcare needs.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💊</div>
+                    <h3>Pharmacy Services</h3>
+                    <p>Access to a wide range of medications, including prescription drugs, over-the-counter medicines, and specialized pharmaceutical products.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🩺</div>
+                    <h3>Diagnostic Services</h3>
+                    <p>State-of-the-art diagnostic facilities including laboratory tests, imaging services, and advanced screening procedures.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👨‍⚕️</div>
+                    <h3>Specialist Consultations</h3>
+                    <p>Expert medical consultations with specialists across various disciplines to provide personalized care plans.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medicine Categories -->
+        <section class="medicine-categories" id="medicines-section">
+            <h2 class="section-title">Medicine Categories</h2>
+            <p>Explore our wide range of pharmaceutical products categorized for your convenience.</p>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="/Users/winsicheng/Downloads/antibiotic.jpeg" alt="Prescription Medicines">
+                    <div class="category-content">
+                        <h3>Prescription Medicines</h3>
+                        <p>Access to all prescribed medications with professional pharmacist guidance.</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="/Users/winsicheng/Downloads/otc.jpg" alt="Over-the-Counter">
+                    <div class="category-content">
+                        <h3>Over-the-Counter</h3>
+                        <p>Non-prescription medications for common ailments and preventive care.</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="/Users/winsicheng/Downloads/vitamins.jpg" alt="Supplements">
+                    <div class="category-content">
+                        <h3>Vitamins & Supplements</h3>
+                        <p>Nutritional supplements to support your overall health and wellness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about-section">
+            <div class="about-content">
+                <h2>About Philippine Hospital</h2>
+                <p>Founded in 2024, Philippine Hospital has rapidly established itself as a leading healthcare institution in the Philippines. Our mission is to provide accessible, high-quality healthcare services to all Filipinos.</p>
+                <p>With state-of-the-art facilities and a team of dedicated healthcare professionals, we strive to deliver exceptional medical care while putting our patients' needs first.</p>
+                <a href="#" class="btn">Learn More About Us</a>
+            </div>
+            <div class="about-image">
+                <img src="/Users/winsicheng/Downloads/hosp.jpg" alt="Philippine Hospital Building">
+            </div>
+        </section>
+
+        <!-- Interactive Medicine Search -->
+        <section class="interactive-search" id="search-section">
+            <h2 class="section-title">Find Your Medicine</h2>
+            <p>Search our extensive database of pharmaceuticals to find information about any medication.</p>
+            
+            <div class="search-form">
+                <input type="text" placeholder="Enter medicine name..." id="medicine-search">
+                <button onclick="searchMedicine()">Search</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Medicines</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Departments</h3>
+                <ul>
+                    <li><a href="#">Pharmacy</a></li>
+                    <li><a href="#">Cardiology</a></li>
+                    <li><a href="#">Neurology</a></li>
+                    <li><a href="#">Orthopedics</a></li>
+                    <li><a href="#">Pediatrics</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>123 Luneta Avenue, Manila</li>
+                    <li>+63 90298765</li>
+                    <li>info@philippinehospital.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Philippine Hospital. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="appointment-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('appointment')">&times;</span>
+            <h2>Book an Appointment</h2>
+            <p>Fill out the form below to schedule an appointment with our healthcare professionals.</p>
+            <form id="appointment-form">
+                <div style="margin-bottom: 15px;">
+                    <label for="name" style="display: block; margin-bottom: 5px;">Full Name:</label>
+                    <input type="text" id="name" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
+                    <input type="email" id="email" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="phone" style="display: block; margin-bottom: 5px;">Phone:</label>
+                    <input type="tel" id="phone" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="date" style="display: block; margin-bottom: 5px;">Preferred Date:</label>
+                    <input type="date" id="date" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="department" style="display: block; margin-bottom: 5px;">Department:</label>
+                    <select id="department" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                        <option value="">Select Department</option>
+                        <option value="pharmacy">Pharmacy</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="pediatrics">Pediatrics</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="message" style="display: block; margin-bottom: 5px;">Additional Information:</label>
+                    <textarea id="message" rows="4" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                </div>
+                <button type="button" onclick="submitAppointment()" style="background-color: #4a9b95; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Submit Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="consultation-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('consultation')">&times;</span>
+            <h2>Free Consultation</h2>
+            <p>Tell us about your health concerns and one of our healthcare professionals will get back to you shortly.</p>
+            <form id="consultation-form">
+                <div style="margin-bottom: 15px;">
+                    <label for="consul-name" style="display: block; margin-bottom: 5px;">Full Name:</label>
+                    <input type="text" id="consul-name" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="consul-email" style="display: block; margin-bottom: 5px;">Email:</label>
+                    <input type="email" id="consul-email" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="consul-phone" style="display: block; margin-bottom: 5px;">Phone:</label>
+                    <input type="tel" id="consul-phone" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="concerns" style="display: block; margin-bottom: 5px;">Health Concerns:</label>
+                    <textarea id="concerns" rows="4" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                </div>
+                <button type="button" onclick="submitConsultation()" style="background-color: #4a9b95; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Request Consultation</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="medicine-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('medicine')">&times;</span>
+            <div id="medicine-details">
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
